@@ -29,14 +29,67 @@ p {
     position: absolute;
 }
 .ticket {
+    box-sizing: border-box;
     display: block;
     position: fixed;
     z-index: 20;
     left: 5vw;
     top: 5vw;
-    background-color: rgba(225, 225, 225, 0.8);
-    width: 7em;
-    height: 10em;
+    width: 10em;
+    height: 15em;
+    background: radial-gradient(0 100%, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px),
+        radial-gradient(100% 100%, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px),
+        radial-gradient(100% 0, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px),
+        radial-gradient(0 0, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px); 
+    background:-moz-radial-gradient(0 100%, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px),
+        -moz-radial-gradient(100% 100%, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px),
+        -moz-radial-gradient(100% 0, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px),   
+        -moz-radial-gradient(0 0, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px);
+    background:-o-radial-gradient(0 100%, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px),
+        -o-radial-gradient(100% 100%, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px),
+        -o-radial-gradient(100% 0, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px),
+        -o-radial-gradient(0 0, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px);
+    background:-webkit-radial-gradient(0 100%, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px),
+        -webkit-radial-gradient(100% 100%, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px),
+        -webkit-radial-gradient(100% 0, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px),
+        -webkit-radial-gradient(0 0, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px);
+    background-position:bottom left, bottom right, top right, top left; 
+    -moz-background-size:50% 50%;
+    -webkit-background-size:50% 50%;
+    background-size:50% 50%;
+    background-repeat:no-repeat;
+    padding: 1.2em 1em 1em;;
+}
+.ticket > h2 {
+    font-size: 20px;
+    font-family: adobe-caslon-pro, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.ticket_nav {
+    display: block;
+    width: 80%;
+    margin: 0.5em auto 0;
+}
+.ticket_nav > li {
+    list-style: none;
+    padding-bottom: 0.3em;
+}
+.ticket_nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 0.5em;
+    color: #666666;
+}
+.ticket_nav a:hover,
+.ticket_nav a:active {
+    color: #000000;
+    font-weight: bold;
+}
+.ticket_nav > li ~ li {
+    border-top: 1px solid #000000;
+    padding-top: 0.8em;
 }
 
 /* HERO STYLES */
