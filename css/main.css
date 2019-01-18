@@ -29,6 +29,30 @@ p {
     margin: 1em 0;
 }
 
+/* TITLE STYLES */
+.title {
+    box-sizing: border-box;
+    flex: 1;
+    text-align: center;
+    padding: 5vh;
+    margin: 2vw auto;
+}
+.title h2 {
+    font-size: 3em;
+}
+.title p + h2 {
+    margin-top: -0.5em;
+}
+.title p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0;
+}
+.title img {
+    width: 80%;
+    box-shadow: 0 0 0 10px #000000;
+}
+
 /* HEADER STYLES */
 .header {
     position: absolute;
@@ -141,38 +165,62 @@ p {
     line-height: 1.5;
 }
 
-/* CALLOUT STYLES */
-.callout {
+/* INFO STYLES */
+.info {
     display: flex;
     box-sizing: border-box;
-    flex-direction: column;
     align-items: center;
     width: 100%;
     margin: 0 auto;
     background-color: #cccccc;
     color: #000000;
 }
-.callout_title {
+.info > .title {
+    border-right: 1px solid #ffffff;
+}
+.info_copy {
     box-sizing: border-box;
-    flex: 1;
-    text-align: center;
-    padding: 5vh;
-    border-bottom: 1px solid #ffffff;
-}
-.callout_title h2 {
-    font-size: 3em;
-}
-.callout_title p + h2 {
-    margin-top: -0.5em;
-}
-.callout_title p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin: 0;
-}
-.callout_copy {
-    box-sizing: border-box;
-    flex: 1;
+    flex: 1 0 40vw;
     padding: 5vh;
     width: 80%;
+}
+
+/* FOOTER STYLES */
+.footer {
+    display: flex;
+    flex: 1;
+    background-color: #000000;
+    box-sizing: border-box;
+    color: #ffffff;
+    height: 50vh;
+    padding: 2vh;
+}
+.footer a {
+    color: #cccccc;
+}
+.footer_col {
+    display: flex;
+    flex: 2;
+    padding: 2vh;
+}
+.footer_content {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+.footer_content img {
+    width: 75%;
+}
+.footer_title {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin: auto;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/barrels_white_50.png);
+    background-position: center;
 }
