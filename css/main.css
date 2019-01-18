@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: adobe-caslon-pro, serif;
+    font-size: 18px;
 }
 .content-container {
     display: flex;
@@ -83,12 +84,13 @@ p {
         -webkit-radial-gradient(100% 0, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px),
         -webkit-radial-gradient(0 0, circle, rgba(225, 225, 225, 0) 14px, #ffffff 15px);
     background-position:bottom left, bottom right, top right, top left; 
-    -moz-background-size:50% 50%;
-    -webkit-background-size:50% 50%;
-    background-size:50% 50%;
-    background-repeat:no-repeat;
+    -moz-background-size: 51% 51%;
+    -webkit-background-size: 51% 51%;
+    background-size :51% 51%;
+    background-repeat: no-repeat;
     padding: 25px 10px 10px;
     overflow: hidden;
+    font-size: 16px;
 }
 .ticket > h2 {
     font-size: 20px;
@@ -165,8 +167,8 @@ p {
     line-height: 1.5;
 }
 
-/* INFO STYLES */
-.info {
+/* CONTENT BOX STYLES */
+.content_box {
     display: flex;
     box-sizing: border-box;
     align-items: center;
@@ -174,11 +176,12 @@ p {
     margin: 0 auto;
     background-color: #cccccc;
     color: #000000;
+    line-height: 1.5;
 }
-.info > .title {
+.content_box > .title {
     border-right: 1px solid #ffffff;
 }
-.info_copy {
+.content_box_copy {
     box-sizing: border-box;
     flex: 1 0 40vw;
     padding: 5vh;
@@ -203,6 +206,11 @@ p {
     flex: 2;
     padding: 2vh;
 }
+.footer_logo {
+    display: flex;
+    flex: 2;
+    padding: 1vh;
+}
 .footer_content {
     display: block;
     margin: auto;
@@ -211,6 +219,7 @@ p {
 }
 .footer_content img {
     width: 75%;
+    margin: auto;
 }
 .footer_title {
     display: flex;
@@ -223,4 +232,86 @@ p {
     background-repeat: no-repeat;
     background-image: url(../images/barrels_white_50.png);
     background-position: center;
+}
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 50em) {
+    /* FOOTER */
+    .footer_col {
+        flex: 1;
+    }
+    .footer_logo {
+        display: none;
+    }
+    .footer_title {
+        border-right: 0;
+        flex: 1;
+    }
+}
+@media only screen and (max-width: 40em) {
+    /* HERO */
+    .hero_content {
+        margin: 1em;
+        text-transform: initial;
+        letter-spacing: 0;
+        word-spacing: 0;
+    }
+    .hero_content > h1 {
+        font-size: 3em;
+        margin: -0.7em auto -0.5em;
+    }
+    .hero_content > p {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+    
+    /* TICKET NAV */
+    .ticket {
+        top: 1vw;
+        left: 4%;
+        width: 92%;
+        height: 50px;
+        padding: 0 5px;
+        font-size: 12px;
+    }
+    .ticket > h2 {
+        display: none;
+    }
+    .ticket_nav {
+        display: block;
+        margin: auto;
+        padding: 8px 0;
+        text-align: center;
+    }
+    .ticket_nav a {
+        padding: 0 8px;
+    }
+    .ticket_nav li {
+        display: inline-block;
+        padding-top: 14px;
+    }
+    .ticket_nav > li ~ li {
+        border-top: 0;
+        border-left: 1px solid #000000;
+    }
+
+    /* CONTENT BOX STYLES */
+    .content_box {
+        flex-direction: column;
+    }
+    .content_box > .title {
+        border-right: 0;
+        border-bottom: 1px solid #ffffff;
+        margin-top: 1.5em;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        height: 100%;
+    }
+    .footer_title {
+        border-top: 1px solid #ffffff;
+        border-left: 0;
+    }
 }
