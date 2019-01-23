@@ -25,6 +25,9 @@ h1 {
 h2 {
     font-size: 24px;
 }
+h3 {
+    font-size: 1.5em;
+}
 p {
     line-height: 1.5;
     margin: 1em 0;
@@ -187,6 +190,23 @@ p {
     padding: 5vh;
     width: 80%;
 }
+.content_box iframe {
+    width: 90%;
+    margin: 10px auto 20px;
+    height: 400px;
+}
+.content_box_copy > iframe {
+    width: 100%;
+}
+.content_box > .map {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+}
+.map iframe {
+    width: 96%;
+    height: 300px;
+}
 
 /* FOOTER STYLES */
 .footer {
@@ -303,6 +323,12 @@ p {
         border-right: 0;
         border-bottom: 1px solid #ffffff;
         margin-top: 1.5em;
+    }
+    .content_box_copy {
+        width: 100%;
+    }
+    .content_box iframe {
+        width: 96%;
     }
 
     /* FOOTER */
