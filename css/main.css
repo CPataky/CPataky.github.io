@@ -347,34 +347,6 @@ li {
     }
     
     /* TICKET NAV */
-    /* .ticket {
-        top: 1vw;
-        left: 4%;
-        width: 92%;
-        height: 50px;
-        padding: 0 5px;
-        font-size: 12px;
-    }
-    .ticket > h2 {
-        display: none;
-    }
-    .ticket_nav {
-        display: block;
-        margin: auto;
-        padding: 8px 0;
-        text-align: center;
-    }
-    .ticket_nav a {
-        padding: 0 8px;
-    }
-    .ticket_nav li {
-        display: inline-block;
-        padding-top: 14px;
-    }
-    .ticket_nav > li ~ li {
-        border-top: 0;
-        border-left: 1px solid #000000;
-    } */
     .ticket {
         height: 60px;
         font-size: 0;
