@@ -80,6 +80,12 @@ li {
 .header {
     position: absolute;
 }
+#ticketSwitch {
+    display: none;
+}
+.switch {
+    display: none;
+}
 .ticket {
     box-sizing: border-box;
     display: block;
@@ -262,54 +268,6 @@ li {
     display: block;
     margin-bottom: 1rem;
 }
-input {
-    position: absolute;
-    left: -9999px;
-    &:focus ~ .collapser{
-        border-color: grey;
-    }
-}
-.collapser {
-    cursor: pointer;
-    border: 1px transparent dotted;
-} 
-.arrow {
-    float: right;
-    margin-left: 0.5em;
-    font-weight: bold;
-    transition: transform .25s ease-out;
-}
-    input:checked ~ .arrow,
-    input:checked ~ .collapser .arrow {
-    transform: rotate(180deg);
-} 
-.collapsed {
-    font-size: 0;
-    margin: 0;
-    opacity: 0;
-    padding: 0;
-  
-    /* fade out, then shrink */
-    transition:   
-    opacity .25s,
-    margin .5s 0.25s,
-    font-size .5s 0.25s,
-    padding .5s .25s;
-}
-input:checked ~ .collapsed {
-    font-size: 1em;
-    line-height: 1.5;
-    opacity: 1;
-    height: auto;
-    padding: 0.5em 1em 1em 1em;
-      
-    /* grow, then fade in */
-    transition:   
-    margin .25s,
-    padding .25s,
-    font-size .25s,
-    opacity .5s .25s;
-}
 
 /* FOOTER STYLES */
 .footer {
@@ -389,7 +347,7 @@ input:checked ~ .collapsed {
     }
     
     /* TICKET NAV */
-    .ticket {
+    /* .ticket {
         top: 1vw;
         left: 4%;
         width: 92%;
@@ -416,6 +374,31 @@ input:checked ~ .collapsed {
     .ticket_nav > li ~ li {
         border-top: 0;
         border-left: 1px solid #000000;
+    } */
+    .ticket {
+        height: 60px;
+        font-size: 0;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+    }
+    .ticket > h2 {
+        display: none;
+    }
+    .switch {
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        padding-bottom: 0.5em;
+    }
+    #ticketSwitch:checked ~ .ticket {
+        height: 240px;
+        font-size: 16px;
     }
 
     /* CONTENT BOX STYLES */

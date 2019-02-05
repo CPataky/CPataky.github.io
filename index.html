@@ -45,14 +45,21 @@
 <body>
     <div class="content_container">
         <header class="header">
+            <input type="checkbox" id="ticketSwitch">
             <div class="ticket">
                 <h2>Admit One</h2>
-                <ul class="ticket_nav">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#do">itinerary</a></li>
-                    <li><a href="#stay">lodging</a></li>
-                    <li><a href="#maps">maps</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+                <label for="ticketSwitch" class="switch">
+                    Admit One &#9776;
+                </label>
+                <nav>
+                    <ul class="ticket_nav">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#do">itinerary</a></li>
+                        <li><a href="#stay">lodging</a></li>
+                        <li><a href="#maps">maps</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <div class="home">
@@ -212,24 +219,6 @@
         <div class="section_head" id="faq">
             <h1>FAQ</h1>
             <div class="faq_box">
-                <label class="collapsible">
-                    <input type="checkbox" />
-                    <span class="arrow">﹀</span>
-                    <span class="collapser question">Q: Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua?</span>
-                    <div class="collapsed"><strong>A:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis
-                        eleifend quam adipiscing vitae. Vitae congue eu consequat ac felis donec et odio pellentesque.</div>
-                </label>
-                <label class="collapsible">
-                    <input type="checkbox" />
-                    <span class="arrow">﹀</span>
-                    <span class="collapser question">Q: Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua?</span>
-                    <div class="collapsed"><strong>A:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis
-                        eleifend quam adipiscing vitae. Vitae congue eu consequat ac felis donec et odio pellentesque.</div>
-                </label>
                 <p class="question">
                     Q: Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?
                 </p>
