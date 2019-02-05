@@ -368,9 +368,21 @@ li {
         cursor: pointer;
         padding-bottom: 0.5em;
     }
+    .menu_btn {
+        display: inline-block;
+    }
+    .menu_btn:after {
+        content: "☰";
+        padding-left: 0.5em;
+    }
     #ticketSwitch:checked ~ .ticket {
         height: 240px;
         font-size: 16px;
+    }
+    #ticketSwitch:checked ~ .ticket .menu_btn:after {
+        color: #e88320;
+        content: "✕";
+        padding-left: 0.5em;
     }
 
     /* CONTENT BOX STYLES */
