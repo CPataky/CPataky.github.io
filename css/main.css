@@ -70,7 +70,7 @@ li {
     box-sizing: border-box;
     width: 90%;
     margin: 2em auto 0;
-    padding: 40px 0 10px;
+    padding: 15px 0;
     text-align: center;
     border-top: 1px solid #000000;
     border-bottom: 1px solid #666666;
@@ -254,7 +254,7 @@ li {
 .faq_box {
     box-sizing: border-box;
     width: 60%;
-    margin: auto;
+    margin: 1.5em auto;
     text-align: left;  
 }
 .question {
@@ -346,6 +346,11 @@ li {
         line-height: 1.5;
     }
     
+    /* SECTION HEAD STYLES */
+    .section_head {
+        padding-top: 60px;
+    }
+
     /* TICKET NAV */
     .ticket {
         height: 60px;
