@@ -94,7 +94,7 @@ li {
     left: 2vw;
     top: 2vw;
     width: 160px;
-    height: 240px;
+    height: 270px;
     background: radial-gradient(0 100%, circle, rgba(225, 225, 225, 0) 14px, #ededed 15px),
         radial-gradient(100% 100%, circle, rgba(225, 225, 225, 0) 14px, #ededed 15px),
         radial-gradient(100% 0, circle, rgba(225, 225, 225, 0) 14px, #ededed 15px),
@@ -251,7 +251,7 @@ li {
 }
 
 /* FAQ STYLES */
-.faq_box {
+.full_box {
     box-sizing: border-box;
     width: 60%;
     margin: 1.5em auto;
@@ -263,10 +263,6 @@ li {
 .question + p {
     padding: 0 1em 1em 2em;
     line-height: 1.5;
-}
-.collapsible {
-    display: block;
-    margin-bottom: 1rem;
 }
 
 /* FOOTER STYLES */
@@ -381,7 +377,7 @@ li {
         padding-left: 0.5em;
     }
     #ticketSwitch:checked ~ .ticket {
-        height: 240px;
+        height: 270px;
         font-size: 16px;
     }
     #ticketSwitch:checked ~ .ticket .menu_btn:after {
