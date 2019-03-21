@@ -42,6 +42,11 @@ p {
 li {
     list-style: none;
 }
+.bus_notes {
+    font-size: 0.9em;
+    font-style: oblique;
+    margin-left: 3em;
+}
 
 /* TITLE STYLES */
 .title {
