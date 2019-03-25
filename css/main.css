@@ -99,7 +99,7 @@ li {
     left: 2vw;
     top: 2vw;
     width: 160px;
-    height: 270px;
+    height: 300px;
     background: radial-gradient(0 100%, circle, rgba(225, 225, 225, 0) 14px, #ededed 15px),
         radial-gradient(100% 100%, circle, rgba(225, 225, 225, 0) 14px, #ededed 15px),
         radial-gradient(100% 0, circle, rgba(225, 225, 225, 0) 14px, #ededed 15px),
@@ -247,6 +247,18 @@ li {
     width: 90%;
     margin: auto;
 }
+.three_col ul {
+    width: 70%;
+    padding-left: 20%;
+    margin: auto;
+}
+.three_col li {
+    margin-bottom: 1em;
+}
+.three_col .bus_notes {
+    font-size: 0.75em;
+    margin-left: 1em;
+}
 .content_col > .three_col {
     border-left: 1px solid #666666;
 }
@@ -329,6 +341,10 @@ li {
         border-right: 0;
         flex: 1;
     }
+    .three_col ul {
+        width: 90%;
+        margin-left: 5%;
+    }
 }
 @media only screen and (max-width: 40em) {
     /* HERO */
@@ -382,7 +398,7 @@ li {
         padding-left: 0.5em;
     }
     #ticketSwitch:checked ~ .ticket {
-        height: 270px;
+        height: 300px;
         font-size: 16px;
     }
     #ticketSwitch:checked ~ .ticket .menu_btn:after {
