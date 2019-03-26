@@ -189,6 +189,9 @@ li {
     background-image: url(../images/dresses.jpg);
     background-position: center top;
 }
+.hero a {
+    color: #ffffff;
+}
 .hero:after {
     bottom: 2vh;
     color: #ffffff;
