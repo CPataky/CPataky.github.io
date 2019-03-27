@@ -49,6 +49,12 @@ li {
 }
 
 /* SOCIAL STYLES */
+.social_links {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    text-align: center;
+}
 .social_links li {
     display: inline-block;
     background-color: #ededed;
@@ -118,7 +124,7 @@ li {
     left: 2vw;
     top: 2vw;
     width: 160px;
-    height: 300px;
+    height: 340px;
     background: radial-gradient(0 100%, circle, rgba(225, 225, 225, 0) 14px, #ededed 15px),
         radial-gradient(100% 100%, circle, rgba(225, 225, 225, 0) 14px, #ededed 15px),
         radial-gradient(100% 0, circle, rgba(225, 225, 225, 0) 14px, #ededed 15px),
@@ -162,7 +168,7 @@ li {
 .ticket_nav a {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 0 12px;
+    padding: 0 6px;
     color: #666666;
 }
 .ticket_nav a:hover,
@@ -420,7 +426,7 @@ li {
         padding-left: 0.5em;
     }
     #ticketSwitch:checked ~ .ticket {
-        height: 300px;
+        height: 340px;
         font-size: 16px;
     }
     #ticketSwitch:checked ~ .ticket .menu_btn:after {
